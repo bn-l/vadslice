@@ -1,6 +1,6 @@
 [project]
 name = "vadslice"
-version = "1.0.0"
+version = "1.0.1"
 description = "Slices audio clips into chunks of a specific number of seconds at the closest moment of silence (decided by silero-vad). Uses onnx which avoids the pytorch dependency."
 readme = "README.md"
 requires-python = ">=3.12"
