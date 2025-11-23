@@ -34,7 +34,9 @@ Example:
 vadslice 30 audio.mp3 ./chunks --format mp3
 ```
 
-Chunks are saved to `output_dir/input_file_stem/chunk_XXXX_offset_XX.XXs.ext`.
+Chunks are saved to `output_dir/input_file_stem/chunk_XXXX_offset_XX.XXs.ext`. `--format` is the output format.
+
+Input: Supports any audio format that PyAV can decode (MP3, WAV, OGG, M4A, FLAC, etc.)
 
 ### Python API
 
@@ -50,7 +52,7 @@ The function `slicer` returns a list of `AudioPart` objects, each containing:
 - `part`: WAV bytes (16 kHz mono) for that slice
 - `offset_s`: Start time offset in seconds from the original audio
 
-Supports any audio format that PyAV can decode (MP3, WAV, OGG, M4A, FLAC, etc.).
+.
 
 
 
